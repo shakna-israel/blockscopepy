@@ -73,6 +73,16 @@ Whilst all the built-in context managers (like `open`) I've tried seem to work a
 
 Libraries may also rely on modifying builtins raising a `TypeError`. (Such as checking if something _is_ a builtin). Therefore, we might be breaking random libraries in a very hard to debug way - making something permissable where it wasn't is much harder to find than an exception.
 
+## Shadowing
+
+This is _not_ proper block-scoping.
+
+Python will happily overwrite any existing variable, it doesn't shadow it, just like it does with a normal context manager.
+
+It's just a syntactic sugar that makes it obvious to the programmer where the beginning and ending of a variable should be, and provides a hint to the GC that we might not need that name anymore.
+
+That's it.
+
 ---
 
 # Credit
