@@ -83,6 +83,10 @@ It's just a syntactic sugar that makes it obvious to the programmer where the be
 
 That's it.
 
+## Inner Workings
+
+A high-level breakdown of how it works can be found [here](https://shatterealm.netlify.app/programming/2021_03_15_pythonic_blockscoping).
+
 ---
 
 # Credit
